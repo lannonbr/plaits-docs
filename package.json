@@ -1,0 +1,46 @@
+{
+  "name": "plaits-docs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
+    "@babel/register": "^7.10.5",
+    "@sector/breadbox": "^0.0.4"
+  },
+  "scripts": {
+    "build": "yarn build:css && toast incremental",
+    "build:css": "NODE_ENV=production tailwindcss build src/style/main.css --output public/style.css",
+    "prepare": "breadbox --dest public/web_modules",
+    "breadbox": "breadbox --dest public/web_modules"
+  },
+  "dependencies": {
+    "@sector/babel-plugin-package-import": "^0.3.1",
+    "@sindresorhus/slugify": "^1.1.0",
+    "globby": "^11.0.1",
+    "preact": "^10.4.6",
+    "preact-render-to-string": "^5.1.10",
+    "react-helmet": "^6.1.0",
+    "tailwindcss": "^1.6.0",
+    "toast": "^0.2.8"
+  },
+  "snowpack": {
+    "exclude": [
+      "public/**/*.js"
+    ],
+    "installOptions": {
+      "alias": {
+        "react": "preact/compat"
+      }
+    },
+    "knownEntrypoints": [
+      "preact",
+      "preact/hooks",
+      "preact/compat",
+      "react-helmet"
+    ]
+  }
+}
