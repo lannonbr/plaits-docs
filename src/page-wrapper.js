@@ -11,6 +11,7 @@ export default ({ children, ...props }) => {
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Inter&display=swa"
         />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Plaits Cheat Sheet</title>
       </Helmet>
       <header className="bg-green-400 p-2 mb-4">
