@@ -1,8 +1,7 @@
 {
   "name": "plaits-docs",
   "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
+  "license": "cc-by-sa 3.0",
   "devDependencies": {
     "@babel/cli": "^7.10.5",
     "@babel/core": "^7.10.5",
@@ -20,7 +19,6 @@
   },
   "dependencies": {
     "@sector/babel-plugin-package-import": "^0.3.1",
-    "@sindresorhus/slugify": "^1.1.0",
     "globby": "^11.0.1",
     "preact": "^10.4.6",
     "preact-render-to-string": "^5.1.10",
