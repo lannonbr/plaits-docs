@@ -33,7 +33,7 @@ function LED({ idx, currIdx, modelType }) {
 
 export default () => {
   const [modelType, setModelType] = useState(0);
-  const [idx, setIdx] = useState(2);
+  const [idx, setIdx] = useState(0);
 
   const leds = [0, 0, 0, 0, 0, 0, 0, 0].map((_, i) => (
     <LED currIdx={idx} idx={i} modelType={modelType} />
@@ -41,6 +41,13 @@ export default () => {
 
   return (
     <main>
+      <p>
+        This is an interactable version of the{" "}
+        <a href="https://mutable-instruments.net/modules/plaits/">
+          Mutable Instruments Plaits
+        </a>{" "}
+        model listing.
+      </p>
       <p className="my-4">
         Select a model by using the two buttons to cycle through either the
         synthesis models on the left or percussive models on the right.

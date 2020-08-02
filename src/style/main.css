@@ -5,4 +5,14 @@ a {
   color: #4299e1;
 }
 
+p {
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+
 @tailwind utilities;
