@@ -1,6 +1,10 @@
 @tailwind base;
 @tailwind components;
 
+body {
+  font-family: "Inter", sans-serif;
+}
+
 a {
   color: #4299e1;
 }
