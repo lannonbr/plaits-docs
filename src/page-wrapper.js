@@ -23,6 +23,8 @@ export default ({ children, ...props }) => {
         <p className="max-w-6xl mx-auto p-2 mb-0 text-center">
           The content on this website was provided by Mutable Instruments under
           a cc-by-sa 3.0 license and is distributed under the same license.
+          <br />
+          <a href="https://github.com/lannonbr/plaits-docs">Website Source</a>
         </p>
       </footer>
     </div>
