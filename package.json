@@ -15,7 +15,8 @@
     "build": "yarn build:css && toast incremental",
     "build:css": "NODE_ENV=production tailwindcss build src/style/main.css --output public/style.css",
     "prepare": "breadbox --dest public/web_modules",
-    "breadbox": "breadbox --dest public/web_modules"
+    "breadbox": "breadbox --dest public/web_modules",
+    "serve": "npx http-server -p 8000 public"
   },
   "dependencies": {
     "@sector/babel-plugin-package-import": "^0.3.1",
