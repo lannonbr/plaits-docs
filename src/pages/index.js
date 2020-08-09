@@ -86,22 +86,30 @@ export default () => {
               gridTemplateColumns: "repeat(3, 1.5rem)",
             }}
           >
-            {modelImages.slice(0, 8).map((img) => {
+            {modelImages.slice(0, 8).map((img, idx) => {
               return (
                 <img
                   src={`data:image/png;base64,${img.image}`}
                   alt=""
                   className="w-6 h-6"
+                  onClick={() => {
+                    setModelType(0);
+                    setIdx(idx);
+                  }}
                 />
               );
             })}
             {leds}
-            {modelImages.slice(8).map((img) => {
+            {modelImages.slice(8).map((img, idx) => {
               return (
                 <img
                   src={`data:image/png;base64,${img.image}`}
                   alt=""
                   className="w-6 h-6"
+                  onClick={() => {
+                    setModelType(1);
+                    setIdx(idx);
+                  }}
                 />
               );
             })}
