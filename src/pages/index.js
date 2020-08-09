@@ -49,8 +49,9 @@ export default () => {
         model listing.
       </p>
       <p className="my-4">
-        Select a model by using the two buttons to cycle through either the
-        synthesis models on the left or percussive models on the right.
+        Select a model by either clicking on the model image you want to view or
+        using the two buttons to cycle through either the synthesis models on
+        the left or percussive models on the right.
       </p>
       <section className="flex">
         <div className="mr-8">
