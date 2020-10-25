@@ -53,6 +53,14 @@ export default () => {
         using the two buttons to cycle through either the synthesis models on
         the left or percussive models on the right.
       </p>
+      <p>
+        If you would like to test Plaits without purchasing the physical module,
+        it is freely available as a <a href="https://vcvrack.com/">VCV Rack</a>{" "}
+        module under the Audible Instruments pack:{" "}
+        <a href="https://library.vcvrack.com/AudibleInstruments/Plaits">
+          Audible Instruments Plaits
+        </a>
+      </p>
       <section className="flex">
         <div className="mr-8">
           <div className="flex space-x-1 mb-1">
